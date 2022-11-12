@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heaven on Earth Uttarakhand</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<header>
+	<nav>
+		<div class="logo">
+			Heaven On Earth <span>Uttarakhand</span>
+		</div>
+		<div class="menu">
+			<a href="#">Home</a>
+			<a href="file:///C:/Users/avane/Downloads/flaura%20and%20fauna/About.html">About</a>
+			<a href="file:///C:/Users/avane/Downloads/flaura%20and%20fauna/galery.html">Gallery</a>
+			<a href="file:///C:/Users/avane/Downloads/flaura%20and%20fauna/contact.html">Contact</a>
+		</div>
+		<div class="icon">
+			<i class="fa fa-search"></i>
+			<a href="file:///C:/Users/avane/Downloads/flaura%20and%20fauna/login.html">Login</a>
+
+		</div>
+	</nav>
+
+
+	<section class="h-text">
+		
+		<h1 data-aos="zoom-in-down" data-aos-delay="100">Uttarakhand Flora and Fauna.</h1>
+		<p>Around 223 species of orchids have been found in North India, and of these, 150 are from Uttarakhand. The state is home to about 102 species of mammals, 623 types of avifauna, 124 varieties of fish, 19 types of amphibians and 69 categories of reptiles. Some of the highly endangered faunae you can find in Uttarakhand are Asian elephant, snow leopard, tiger, musk deer, Himalayan monal, king cobra, bharal, etc. The state has 6 wildlife sanctuaries and 6 national parks. The first national park of India, the Corbett National Park, was established in Uttarakhand in 1936.</p>
+		<input type="text" name="" placeholder="Search here...">
+		<button><i class="fa fa-search"></i></button>
+
+		
+	</section>
+</header>
+
+
+
+
+<!--- filter gallery end---->
+
+<!-- slider start--->
+
+<section class="members">
+		<div class="member-info"  data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="100">
+			<h1>Our <span>Informations</span></h1>
+	
+</div>
+
+
+<div class="member-card"  data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="300">
+	
+
+	
+
+	<img src="icon1.png" width="100">
+	<img src="icon2.png" width="100">
+	<img src="icon3.png" width="100">
+	<img src="icon4.png" width="100">
+</div>
+<div class="m-images"  data-aos="zoom-in" data-aos-offset="100" data-aos-delay="300">
+	<img src="9.jpg">
+	<img src="10.jpg">
+	<img src="11.jpg">
+	<img src="12.jpg">
+	<img src="13.jpg">
+	<img src="14.jpg">
+	
+
+</div>
+</section>
+
+
+
+
+
+<footer>
+	<div class="newsletter">
+		<div data-aos="fade-up" data-aos-offset="200">
+			<h2>Subscribe our newsletter</h2>
+			<p>We’re a team of non-cynics who truly care for our work.</p>
+		</div>
+		<div class="n-text" data-aos="fade-up-right" data-aos-offset="200">
+			<label>
+				<input type="text" name="" placeholder="Enter your email">
+				<button>Subscribe</button>
+
+			</label>
+		</div>
+	</div>	
+
+
+	<div class="f-contact" data-aos="zoom-in-up" data-aos-offset="200">
+		<div>
+			<h1>Information</h1>
+			<p>This site is used to share information and provide about the flora and fauna of Uttarakhand .</p>
+			
+			<i class="fa fa-whatsapp"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-telegram"></i>
+			<i class="fa fa-twitter"></i>
+		</div>
+
+
+		<div>
+			<h1>Useful links</h1>
+			<a href="file:///C:/Users/avane/Downloads/flaura%20and%20fauna/About.html"><p>About us</p></a>
+			<a href="#picture"><p>Gallery</p></a>>
+			<p></p>
+			
+
+		</div>
+
+		<div>
+			<h1>Help & Support</h1>
+			
+			<p>Technical support</p>
+			<a href="file:///C:/Users/avane/Downloads/flaura%20and%20fauna/FEEDBACK.HTML"><p>Customer feedback</p></a>
+
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script>
+	$('.portfolio-item').isotope({
+  // options
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});
+		$('.portfolio-menu ul li').click(function(){
+		$('.portfolio-menu ul li').removeClass('active');
+		$(this).addClass('active');
+
+			var selector = $(this).attr('data-filter');
+		$('.portfolio-item').isotope({
+			filter:selector
+		});
+		return false;
+	});
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+</script>
+</body>
+</html>
